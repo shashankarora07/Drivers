@@ -1,6 +1,7 @@
 /* driver init file */
 
 #include "header.h"
+#include "declaration.h"
 
 struct file_operations device_fops = {
         open: my_open,
@@ -50,3 +51,5 @@ static int __init mychar_init(void) //constructor
 module_init(mychar_init);
 
 MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Shashank");
+MODULE_DESCRIPTION("Dummy Driver");
